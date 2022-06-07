@@ -21,7 +21,7 @@ $git config --global user.email "1316238389@qq.com"
 $ git init
 ```
 
-2 将仓库下的文件添加到仓库
+2 将仓库下的文件添加到暂存区
 
 ```shell
 $ git add a.txt 
@@ -29,7 +29,7 @@ $ git add a.txt
 $ git add *
 ```
 
-3 用 ```git commit``` 告诉 Git , 把文件提交到仓库
+3 用 ```git commit``` 告诉 Git , 把暂存区提交到仓库
 
 ```shell
 $ git commit -m "write a readme file"
@@ -53,5 +53,20 @@ git diff
 
 6 版本回退
 
+HEAD 指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令  `git reset --hard commit_id`
 
+- 穿梭前，用`git log`可以查看提交历史，以便确定要回退到哪个版本。
+- 要重返未来，用`git reflog`查看命令历史，以便确定要回到未来的哪个版本。
+
+7 管理与修改
+
+当新建了一个文件 b.txt,  git add b.txt 添加至缓存区，git commit -m "" 会将缓存区的内容添加至仓库
+
+当新建了一个文件b.txt, git add b.txt 添加至缓存区，修改 b.txt 后，git commit -m “”  会将第一次添加的 b.txt 添加至仓库
+
+查看仓库与本地的文件不同：
+
+```shell
+git diff HEAD -- readme.txt
+```
 
