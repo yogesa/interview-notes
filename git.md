@@ -45,5 +45,13 @@ $ git commit -m "write a readme file"
 git status
 ```
 
+5 查看仓库中与本地不同的文件，并且查看本地修改了哪里
+
+```shell
+git diff
+```
+
+6 版本回退
+
 
 
