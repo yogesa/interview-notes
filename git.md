@@ -15,9 +15,29 @@ $git config --global user.email "1316238389@qq.com"
 
 ### 使用Git
 
-在想要要建立仓库的目录下, 初始化仓库
+1 在想要要建立仓库的目录下, 初始化仓库
 
 ```shell
 $ git init
 ```
+
+2 将仓库下的文件添加到仓库
+
+```shell
+$ git add a.txt 
+// 也可以将仓库下的所有文件放入仓库 
+$ git add *
+```
+
+3 用 ```git commit``` 告诉 Git , 把文件提交到仓库
+
+```shell
+$ git commit -m "write a readme file"
+```
+
+<font color="red">Q1 : 为什么 ```add``` 和```git commit``` 弄这么麻烦, 先要添加, 再要提交, 弄两次添加文件 ? </font>
+
+​	因为 add 可以一次添加一个文件, 而提交可以多次添加将添加的文件一同进行提交.
+
+
 
