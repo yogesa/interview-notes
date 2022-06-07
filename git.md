@@ -39,5 +39,11 @@ $ git commit -m "write a readme file"
 
 ​	因为 add 可以一次添加一个文件, 而提交可以多次添加将添加的文件一同进行提交.
 
+4 掌握仓库的实时状态
+
+```shell
+git status
+```
+
 
 
