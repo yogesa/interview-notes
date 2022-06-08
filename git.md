@@ -1,3 +1,5 @@
+
+
 # Git
 
 git 是一个分布式的版本控制工具.
@@ -88,4 +90,55 @@ git checkout -- a.txt
 9 删除文件
 
 `git rm` 用于删除 git 仓库中的文件 
+
+### 远程仓库
+
+在 Github 中新建一个仓库
+
+![image-20220608154629110](C:\Users\hui\AppData\Roaming\Typora\typora-user-images\image-20220608154629110.png)
+
+将本地仓库与远程仓库关联
+
+```shell
+git remote add origin git@github.com:yogesa/interview-notes.git
+```
+
+将本地仓库的所有内容推送到远程库上 
+
+```shell
+// 第一次加上 -u
+git push -u origin master
+// 以后不同加 -u
+git push origin master
+```
+
+查看远程库的信息
+
+```SHELL
+git remote -v
+```
+
+解除本地和远程仓库之间的关系
+
+```shell
+git remote rm origin
+```
+
+### 分支
+
+#### 创建分支
+
+```shell
+git checkout -b dev
+```
+
+查看分支
+
+```shell
+git branch
+```
+
+
+
+
 
