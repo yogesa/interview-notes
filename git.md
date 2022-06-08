@@ -85,3 +85,7 @@ git diff HEAD -- readme.txt
 git checkout -- a.txt
 ```
 
+9 删除文件
+
+`git rm` 用于删除 git 仓库中的文件 
+
